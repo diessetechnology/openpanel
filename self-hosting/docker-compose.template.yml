@@ -110,9 +110,6 @@ services:
       - op-api
     env_file:
       - .env
-    deploy:
-      mode: replicated
-      replicas: $OP_WORKER_REPLICAS
 
 volumes:
   op-db-data:
